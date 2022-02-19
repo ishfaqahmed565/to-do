@@ -1,1 +1,1 @@
-# This is to-do app created using vanilla js.
+# This is a to-do app created using vanilla js.
