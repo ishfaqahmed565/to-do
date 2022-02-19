@@ -3,3 +3,84 @@
     box-sizing: border-box;
     font-family: Poppins, 'san-serif';
 }
+.backgroundimg{
+    background-image: linear-gradient(133deg,#0ccff1f6 , rgb(121, 255, 221) )
+}
+body{
+    height:100vh;
+    display:flex;
+    align-items: center;
+    flex-direction: column;  
+    color: white;
+    background-color:  #030c29fa;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height:20vh;
+}
+header >h1{
+    padding:13px;
+    font-size:25px;
+    font-weight: 400;
+}
+header >i{
+    font-size: 20px;
+    
+    
+  
+    /* Set the background size and repeat properties. */
+    background-size: 100%;
+    background-repeat: repeat;
+  
+    /* Use the text as a mask for the background. */
+    /* This will show the gradient as a text color rather than element bg. */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+}
+.input-container{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(133deg,#0c55f1f6 , rgb(121, 255, 221) );
+    padding: 4px;
+    border-radius: 4px;
+}
+.input-container>button>i{
+    font-size: 16px;
+  
+    /* Set the background size and repeat properties. */
+    background-size: 100%;
+    background-repeat: repeat;
+  
+    /* Use the text as a mask for the background. */
+    /* This will show the gradient as a text color rather than element bg. */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+}
+form button,form input{
+ padding:.5rem 1rem .5rem 1rem;
+ background: whitesmoke;
+ border: none;
+ outline: none;
+}
+.input-container> button{
+    color:rgb(18, 24, 22);
+   
+    cursor:pointer;
+    background-color: whitesmoke; 
+    background-image:  linear-gradient(133deg, rgb(121, 255, 221) ,#0c77f1f6 ); 
+    background-size: 0% ;
+    background-position: left;
+    transition: 300ms background-position ease-in-out;
+    
+}
+.input-container >button:hover{
+    background-size:300%;
+    background-position: right; 
+  }
